@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagos  - Unidad Educativa Carlos Crespi II </title>
+  
+      <style>
+        body {
+          font-family: 'Segoe UI', sans-serif;
+          background-color: #f4f4f4;
+          padding: 40px;
+          display: flex;
+          justify-content: center;
+        }
+    
+        .formulario-pago {
+          background-color: #fff;
+          padding: 30px;
+          border-radius: 10px;
+          max-width: 450px;
+          width: 100%;
+          box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+        }
+    
+        .formulario-pago h2 {
+          margin-bottom: 20px;
+        }
+    
+        label {
+          display: block;
+          margin-bottom: 5px;
+          font-weight: 600;
+        }
+    
+        select, input {
+          width: 100%;
+          padding: 10px;
+          margin-bottom: 15px;
+          border-radius: 6px;
+          border: 1px solid #ccc;
+          font-size: 16px;
+        }
+    
+        .iconos {
+          display: flex;
+          justify-content: flex-end;
+          gap: 10px;
+          margin-bottom: 20px;
+        }
+    
+        .iconos img {
+          height: 25px;
+        }
+    
+        button {
+          background-color: #0070ba;
+          color: white;
+          border: none;
+          padding: 12px;
+          width: 100%;
+          border-radius: 6px;
+          font-size: 16px;
+          cursor: pointer;
+        }
+    
+        button:hover {
+          background-color: #005fa3;
+        }
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #b30000; /* Un azul representativo */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .logo-container {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 20px;
+        }
+        .logo {
+            max-height: 80px;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .hero {
+            background-image: url('imagen-principal.jpg'); /* Reemplaza con tu imagen */
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero-content {
+            background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mejor legibilidad */
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 1.2em;
+        }
+        .main-content {
+            padding: 20px;
+            background-color: white;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .section {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        .section:last-child {
+            border-bottom: none;
+        }
+        h2 {
+            color: #0056b3;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .sobresaliente {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .sobresaliente h3 {
+            color: #008000; /* Un verde para destacar */
+        }
+        /* Estilos para las imágenes */
+        .image-container {
+            display: inline-block; /* Para que las imágenes se muestren una al lado de la otra si hay espacio */
+            margin: 10px; /* Espacio alrededor de cada imagen */
+            border: 1px solid #ccc; /* Borde opcional */
+            border-radius: 5px; /* Bordes redondeados opcionales */
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+        }
+        .gallery-image {
+            max-width: 200px; /* Ancho máximo de las imágenes */
+            height: auto; /* Para mantener la proporción */
+            display: block; /* Elimina el espacio extra debajo de la imagen */
+            border-radius: 5px; /* Bordes redondeados opcionales */
+        }
+      </style>
+    </head>
+    <body>
+        <header>
+            <div class="logo-container">
+                <img src="e:\PROYECTO\logo-carlos-crespi.jpg" alt="Logo Padre Carlos Crespi" class="logo">
+            </div>
+            <h1>Unidad Educativa Carlos Crespi II</h1>
+            <p><strong>Una verdadera obra salesiana</strong></p>
+        </header>
+    
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="academico.html">Académico</a>
+            <a href="vida-estudiantil.html">Vida Estudiantil</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="pagos-jep.html">Pagos</a>
+        </nav>
+    
+    
+      <form class="formulario-pago" id="formulario-pago">
+        <h2>Tarjeta de crédito</h2>
+    
+        <div class="iconos">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg" alt="Visa" />
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard" />
+          <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/American_Express_logo.svg" alt="Amex" />
+        </div>
+    
+        <label for="banco">Selecciona tu banco</label>
+        <select id="banco" required>
+          <option value="">-- Selecciona --</option>
+          <option value="jep">Banco JEP</option>
+          <option value="guayaquil">Banco Guayaquil</option>
+          <option value="pichincha">Banco Pichincha</option>
+          <option value="austro">Banco del Austro</option>
+          <option value="pacifico">Banco Pacifico</option>
+        </select>
+    
+        <label for="numero">Número de tarjeta</label>
+        <input type="text" id="numero" placeholder="XXXX XXXX XXXX XXXX" required />
+    
+        <label for="titular">Nombre del titular</label>
+        <input type="text" id="titular" placeholder="Como aparece en la tarjeta" required />
+    
+        <label for="fecha">Fecha de vencimiento (MM/AA)</label>
+        <input type="text" id="fecha" placeholder="MM/AA" required />
+    
+        <label for="cvv">Código de seguridad</label>
+        <input type="text" id="cvv" placeholder="CVV" required />
+    
+        <button type="submit">Pagar</button>
+      </form>
+    
+      <script>
+        document.getElementById("formulario-pago").addEventListener("submit", function (e) {
+          e.preventDefault();
+    
+          const banco = document.getElementById("banco").value;
+    
+          let url = "";
+    
+          switch (banco) {
+            case "jep":
+              url = "https://www.jep.coop/pasarela";
+              break;
+            case "guayaquil":
+              url = "https://www.bancoguayaquil.com/pasarela";
+              break;
+            case "pichincha":
+              url = "https://www.pichincha.com/pasarela";
+              break;
+              case "austro":
+              url = "https://www.bancodelaustro.com/pasarela";
+              break;
+              case "pacifico":
+              url = "https://www.bancodelpacifico.com/personas/inicio/pasarela";
+              break;
+            default:
+              alert("Selecciona un banco válido.");
+              return;
+          }
+    
+          window.location.href = url;
+        });
+      </script>
+    
+    </body>
+    </html>
